@@ -1,4 +1,4 @@
-#YouTube Video Trend Prediction 
+YouTube Video Trend Prediction 
 
 -> Folder Non Trending Data Extraction contains all the files used to extract the Non trending video dataset.
 
