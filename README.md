@@ -1,62 +1,15 @@
-YouTube Video Trend Prediction 
+# YouTube Video Trend Prediction
 
--> Folder Non Trending Data Extraction contains all the files used to extract the Non trending video dataset.
+* With the widespread online global access of data and the ease with which an online content can be produced, we often are directed to understand the underlying concept of popularity growth on the internet. It is of utmost relevance to a broad range of services like designing an effective caching model, viral marketing strategies, estimation of costs, advertisement campaigns and for the overall improvement for the future content. 
 
--> category_id is a json file containing the details of all the categories, which is used to convert the category Ids into its category names.
+* This project predicts the trending videos on the YouTube Platform.
 
--> NonTrendingVidoes and TrendingVideos CSV files contain the data used for training and testing of data.
+* The youtube trending and non trending data was collected by crawling the YouTube public API.
 
--> channel_dict is pickle file containing the dictionary of channel ID to channel name. It is used to convert the channel IDs of non trending videos into channel names.
+* Machine Learning models Logistic Regression, Linear SVC and KNN Classifier from the scikit learn were used for the prediction.
 
--> youTubeTrendingVideoPrediction contains the python code. The code can be executed in Anaconda Spyder.
+* Linear SVC was used to reduce the number of features from the collected data before passing it to the Linear Regression and KNN Classifiers.
 
--> When youTubeTrendingVideoPrediction is executed, it fetches the data, preprocess it and trains the model and produces the output.
+* KNN Classifier was used to compare the results obtained from the Logistic Regression Model.
 
--> The output is threefold, first it the model is built using Logistic Regression and then using KNN Classfication. 
-	In the end some of the patterns is seen in the dataset is shown.
-	
--> The code approxiamately takes 30 seconds to run.
-
-
-
-
--> Modules used:
-
-
-import numpy as np
-
-import pandas as pd
-
-import matplotlib.pyplot as plt
-
-import sklearn as sk
-
-import re
-
-import json
-
-import pickle
-
-
-
-from pandas import Series, DataFrame
-
-from sklearn.linear_model import LogisticRegression
-
-from sklearn.cross_validation import train_test_split
-
-from sklearn.metrics import classification_report
-
-from sklearn.svm import LinearSVC
-
-from sklearn.feature_selection import SelectFromModel
-
-import sklearn.preprocessing as pre
-
-from sklearn.metrics import roc_curve, auc
-
-from sklearn.preprocessing import label_binarize
-
-from sklearn.utils import resample
-
-from sklearn.neighbors import KNeighborsClassifier
+* The projects classifies the videos as trending and non trending videos.
