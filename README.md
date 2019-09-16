@@ -12,8 +12,8 @@
 
 * KNN Classifier was used to compare the results obtained from the Logistic Regression Model.
 
-* The projects classifies the videos as trending and non trending videos.
+* The projects classify the videos as trending and non trending videos.
 
-* It also shows some of the intresting observations made in the data.
+* It also shows some of the interesting observations made in the data.
 
 * The detailed report can be seen in the Project Report PDF file.
